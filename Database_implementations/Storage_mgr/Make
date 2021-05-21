@@ -1,0 +1,11 @@
+test_case1:
+	gcc dberror.c storage_mgr.c test_assign1_1.c -o test1_output
+	./test1_output
+
+test_case2:
+	gcc dberror.c storage_mgr.c test_assign1_2.c -o test2_output
+	./test2_output
+
+clean:
+	$(RM) test1_output
+	$(RM) test2_output

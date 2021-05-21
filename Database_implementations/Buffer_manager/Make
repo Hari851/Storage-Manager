@@ -1,0 +1,11 @@
+test_case1:
+	gcc dberror.c buffer_mgr.c dberror.h storage_mgr.c buffer_mgr_stat.h buffer_mgr_stat.c buffer_mgr.h test_assign2_1.c -o test1_output
+	./test1_output
+
+test_case2:
+	gcc dberror.c buffer_mgr.c dberror.h storage_mgr.c buffer_mgr_stat.h buffer_mgr_stat.c buffer_mgr.h test_assign2_2.c -o test2_output
+	./test2_output
+
+clean:
+	$(RM) test1_output
+	$(RM) test2_output
